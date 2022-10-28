@@ -1,9 +1,9 @@
-﻿using CliverApi.Models;
+﻿using EzjobApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace CliverApi.Attributes
+namespace EzjobApi.Attributes
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class ProtectRoute : Attribute, IAuthorizationFilter

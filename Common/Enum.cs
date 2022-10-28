@@ -1,4 +1,4 @@
-﻿namespace Kensa.Common
+﻿namespace EzjobApi.Common
 {
     public static class Enum
     {

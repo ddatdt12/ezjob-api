@@ -1,10 +1,11 @@
 using AutoMapper;
 using EzjobApi.Core.Contracts;
 using EzjobApi.DTOs;
+using EzjobApi.Error;
 using EzjobApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CliverApi.Controllers
+namespace EzjobApi.Controllers
 {
     [ApiController]
     [Route("api/auth")]

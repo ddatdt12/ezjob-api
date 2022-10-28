@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using static Kensa.Common.Enum;
+using static EzjobApi.Common.Enum;
 
 namespace EzjobApi.Models
 {

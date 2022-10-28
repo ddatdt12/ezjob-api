@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Kensa.Helper
+namespace EzjobApi.Helper
 {
     public class Assign
     {

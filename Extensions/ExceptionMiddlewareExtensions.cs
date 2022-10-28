@@ -19,10 +19,9 @@ namespace EzjobApi.Extensions
                         if (contextFeature != null)
                         {
                             logger.LogError($"Something went wrong: {contextFeature.Error}");
-                            await context.Response.WriteAsync(new ErrorDetails()
+                            await context.Response.WriteAsync(new HttpResponseException("Internal Server Error.")
                             {
                                 StatusCode = context.Response.StatusCode,
-                                Message = contextFeature.Error.Message ?? "Internal Server Error."
                             }.ToString());
                         }
                     });

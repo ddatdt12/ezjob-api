@@ -1,12 +1,12 @@
 using AutoMapper;
-using CliverApi.Attributes;
-using CliverApi.Core.Contracts;
-using CliverApi.DTOs;
-using CliverApi.Models;
+using EzjobApi.Attributes;
+using EzjobApi.Core.Contracts;
+using EzjobApi.DTOs;
+using EzjobApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CliverApi.Controllers
+namespace EzjobApi.Controllers
 {
     [ApiController]
     [Route("api/users")]
@@ -57,7 +57,7 @@ namespace CliverApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateItem(string id, User user)
+        public async Task<IActionResult> UpdateItem(Guid id, User user)
         {
             if (id != user.Id)
                 return BadRequest();

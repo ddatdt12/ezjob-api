@@ -1,4 +1,4 @@
-﻿using static Kensa.Common.Enum;
+﻿using static EzjobApi.Common.Enum;
 
 namespace EzjobApi.DTOs
 {

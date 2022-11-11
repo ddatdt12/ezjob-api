@@ -6,6 +6,7 @@ namespace EzjobApi.Core.Contracts
     {
         IUserRepository Users { get; }
         IAuthRepository Auth { get; }
+        ICategoryRepository Categories { get; }
         Task CompleteAsync();
     }
 }

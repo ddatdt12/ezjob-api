@@ -9,6 +9,7 @@ namespace EzjobApi.Core.Repositories
         private readonly ILogger _logger;
         public IUserRepository Users { get; private set; }
         public IAuthRepository Auth { get; private set; }
+        public ICategoryRepository Categories { get; private set; }
 
         public UnitOfWork(DataContext context, ILoggerFactory loggerFactory, IConfiguration configuration)
         {
@@ -17,6 +18,7 @@ namespace EzjobApi.Core.Repositories
 
             Users = new UserRepository(context, _logger);
             Auth = new AuthRepository(configuration, context, _logger);
+            Categories = new CategoryRepository(context, _logger);
         }
 
         public async Task CompleteAsync()
